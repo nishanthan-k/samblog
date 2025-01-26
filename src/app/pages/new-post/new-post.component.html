@@ -1,0 +1,20 @@
+<section>
+  <h2>Create a new blog</h2>
+  <form [formGroup]="newPost" (ngSubmit)="formSubmit()">
+    <div class="form-group">
+      <input type="text" formControlName="title" placeholder="Title">
+      <p *ngIf="checkForError('title')" class="error">Title is required</p>
+    </div>
+
+    <div class="form-group">
+      <textarea formControlName="postContent" name="postContent" id="postContent" rows="10"
+        placeholder="Start your blog!">
+      </textarea>
+      <p *ngIf="checkForError('postContent')" class="error">
+        Blog content is required
+      </p>
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+</section>
