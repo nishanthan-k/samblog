@@ -1,0 +1,16 @@
+section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+  gap: 10px;
+
+  div {
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 10px;
+
+    .author {
+      text-align: end;
+      margin-bottom: 6px;
+    }
+  }
+}

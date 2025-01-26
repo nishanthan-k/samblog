@@ -1,1 +1,6 @@
-<p>posts works!</p>
+<section>
+  <div *ngFor="let post of posts">
+    <p class="author">{{ post.author }}</p>
+    <p class="blogContent">{{ post.blog_content }}</p>
+  </div>
+</section>
